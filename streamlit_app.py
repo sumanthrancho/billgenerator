@@ -2,7 +2,7 @@
 import streamlit as st
 
 
-st.title("Rancho Labs")
+st.sidebar("Rancho Labs")
 st.title(' Bill generator!')
 
 choice = st.text_input("Hello. Would you like to order something? Please answer YES/ NO or yes/no")
@@ -17,13 +17,13 @@ Capsicum =80
  
 if(choice=="YES" or choice=='yes'):
   st.write("We have a wide range of products")
-  nooftomatoes = st.number_input('How many kilos of TOMATOES would you like to purchase?')
-  noofonions = st.number_input('How many kilos of ONIONS would you like to purchase?')
-  noofpotatoes = st.number_input('How many kilos of POTATOES would you like to purchase?')
-  noofBrinjal = st.number_input('How many kilos of BRINJAL would you like to purchase?')
-  noofcabbage = st.number_input('How many kilos of cabbage would you like to purchase?')
-  noofcauliflower = st.number_input('How many kilos of cauliflower would you like to purchase?')
-  noofcapsicum = st.number_input('How many kilos of capsicum would you like to purchase?')
+  nooftomatoes = st.number_input('How many kilos of TOMATOES would you like to purchase?'  ,step=1)
+  noofonions = st.number_input('How many kilos of ONIONS would you like to purchase?' ,step=1)
+  noofpotatoes = st.number_input('How many kilos of POTATOES would you like to purchase?',step=1)
+  noofBrinjal = st.number_input('How many kilos of BRINJAL would you like to purchase?',step=1)
+  noofcabbage = st.number_input('How many kilos of cabbage would you like to purchase?',step=1)
+  noofcauliflower = st.number_input('How many kilos of cauliflower would you like to purchase?',step=1)
+  noofcapsicum = st.number_input('How many kilos of capsicum would you like to purchase?',step=1)
 
   total_cost_of_tomato =nooftomatoes*Tomatoes
   total_cost_of_onion = noofonions*Onions
