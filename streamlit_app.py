@@ -35,9 +35,9 @@ if(choice=="YES" or choice=='yes'):
   Total_bill= total_cost_of_tomato+total_cost_of_onion+total_cost_of_potatoes+total_cost_of_Brinjal+total_cost_of_cabbage+total_cost_of_cauliflower+total_cost_of_capsicum
   if(st.button('Submit')):
    if(Total_bill>0):
-    st.success(" Total bill :",Total_bill)
+    st.success(" Total bill :{} ".format(Total_bill))
    else:
-    st.error("Total bill :",Total_bill)
+    st.error(" Total bill :{} ".format(Total_bill))
 elif(choice=='N' or choice=='n'):
  st.error("Thank you for visitng. Goodbyee")
 else:
