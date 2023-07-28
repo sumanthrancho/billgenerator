@@ -2,7 +2,7 @@
 import streamlit as st
 
 
-st.sidebar("Rancho Labs")
+st.title("Rancho Labs")
 st.title(' Bill generator!')
 
 choice = st.text_input("Hello. Would you like to order something? Please answer YES/ NO or yes/no")
