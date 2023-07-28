@@ -32,11 +32,14 @@ if(choice=="YES" or choice=='yes'):
   total_cost_of_cabbage = noofcabbage*Cabbage
   total_cost_of_cauliflower=noofcauliflower*Cauliflower
   total_cost_of_capsicum =noofcapsicum*Capsicum
-  
   Total_bill= total_cost_of_tomato+total_cost_of_onion+total_cost_of_potatoes+total_cost_of_Brinjal+total_cost_of_cabbage+total_cost_of_cauliflower+total_cost_of_capsicum
-  st.success(" Total bill :",Total_bill)
+  if(st.button('Submit')):
+   if(Total_bill>0):
+    st.success(" Total bill :",Total_bill)
+   else:
+    st.error("Total bill :",Total_bill)
 elif(choice=='N' or choice=='n'):
-  st.error("Thank you for visitng. Goodbyee")
+ st.error("Thank you for visitng. Goodbyee")
 else:
-  st.warning("please give input y or n")
+ st.warning("please give input yes or no")
  
