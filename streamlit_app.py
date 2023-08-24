@@ -6,7 +6,7 @@ st.title("Rancho Labs")
 st.title(' Bill generator!')
 
 choice = st.text_input("Hello. Would you like to order something? Please answer YES/ NO or yes/no")
-st.write("Tomatoes =40')
+st.write("Tomatoes =40")
 st.write("Onions =60")
 st.write("Potatoes =55")
 st.write("Brinjal = 65")
